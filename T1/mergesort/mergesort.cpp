@@ -1,3 +1,6 @@
+/* spoj submit code: https://www.spoj.com/status/ns=27492585
+ */
+
 #include <iostream>
 #include <vector>
 #include <iterator>
@@ -53,7 +56,8 @@ std::vector<int> split(std::vector<int> vecInput)
 
 int main()
 {
-    auto input = string("7 3 2 9 5 4 3");
+    std::string input;
+    getline(cin, input);
     auto iss = std::istringstream(input);
     std::vector<std::string> results((std::istream_iterator<std::string>(iss)),
                                      std::istream_iterator<std::string>());
